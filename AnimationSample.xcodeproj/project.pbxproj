@@ -12,6 +12,8 @@
 		96A4FE7A2037FFFE001931EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A4FE782037FFFE001931EB /* Main.storyboard */; };
 		96A4FE7C2037FFFE001931EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A4FE7B2037FFFE001931EB /* Assets.xcassets */; };
 		96A4FE7F2037FFFE001931EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A4FE7D2037FFFE001931EB /* LaunchScreen.storyboard */; };
+		96A4FE872038065F001931EB /* LogoRotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4FE862038065F001931EB /* LogoRotationViewController.swift */; };
+		96A4FE8920381F79001931EB /* LogoZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4FE8820381F79001931EB /* LogoZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		96A4FE7B2037FFFE001931EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A4FE7E2037FFFE001931EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A4FE802037FFFE001931EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A4FE862038065F001931EB /* LogoRotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoRotationViewController.swift; sourceTree = "<group>"; };
+		96A4FE8820381F79001931EB /* LogoZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				96A4FE742037FFFE001931EB /* AppDelegate.swift */,
 				96A4FE762037FFFE001931EB /* ViewController.swift */,
+				96A4FE862038065F001931EB /* LogoRotationViewController.swift */,
+				96A4FE8820381F79001931EB /* LogoZoomViewController.swift */,
 				96A4FE782037FFFE001931EB /* Main.storyboard */,
 				96A4FE7B2037FFFE001931EB /* Assets.xcassets */,
 				96A4FE7D2037FFFE001931EB /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A4FE8920381F79001931EB /* LogoZoomViewController.swift in Sources */,
 				96A4FE772037FFFE001931EB /* ViewController.swift in Sources */,
 				96A4FE752037FFFE001931EB /* AppDelegate.swift in Sources */,
+				96A4FE872038065F001931EB /* LogoRotationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnimationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.culumn.AnimationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnimationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.culumn.AnimationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
