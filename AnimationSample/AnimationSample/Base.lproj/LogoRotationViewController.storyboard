@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6XZ-0p-iqt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rotation + Spring-->
+        <scene sceneID="T8C-u4-1Xb">
+            <objects>
+                <viewController title="Rotation + Spring" id="6XZ-0p-iqt" customClass="LogoRotationViewController" customModule="AnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IOc-jl-VE1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiscordLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gkS-iR-KVL">
+                                <rect key="frame" x="94" y="272" width="187.5" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gkS-iR-KVL" secondAttribute="height" multiplier="1:1" id="C8R-Rb-i2Z"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMn-wp-LHd">
+                                <rect key="frame" x="16" y="509" width="343" height="138"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="didTapButton:forEvent:" destination="6XZ-0p-iqt" eventType="touchUpInside" id="zF7-xX-sBb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EGA-ht-vhe" firstAttribute="bottom" secondItem="xMn-wp-LHd" secondAttribute="bottom" constant="20" id="9AR-MR-7pH"/>
+                            <constraint firstItem="EGA-ht-vhe" firstAttribute="trailing" secondItem="xMn-wp-LHd" secondAttribute="trailing" constant="16" id="Ecl-Lz-vsi"/>
+                            <constraint firstItem="gkS-iR-KVL" firstAttribute="width" secondItem="IOc-jl-VE1" secondAttribute="width" multiplier="0.5" id="Jww-f4-QQa"/>
+                            <constraint firstItem="gkS-iR-KVL" firstAttribute="centerY" secondItem="EGA-ht-vhe" secondAttribute="centerY" id="KoC-fR-Cjy"/>
+                            <constraint firstItem="gkS-iR-KVL" firstAttribute="centerX" secondItem="EGA-ht-vhe" secondAttribute="centerX" id="SQi-Pr-pAg"/>
+                            <constraint firstItem="xMn-wp-LHd" firstAttribute="top" secondItem="gkS-iR-KVL" secondAttribute="bottom" constant="50" id="cpF-XL-QfN"/>
+                            <constraint firstItem="xMn-wp-LHd" firstAttribute="leading" secondItem="EGA-ht-vhe" secondAttribute="leading" constant="16" id="u54-fD-7bO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EGA-ht-vhe"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="xMn-wp-LHd" id="weV-Er-DVT"/>
+                        <outlet property="logoImageView" destination="gkS-iR-KVL" id="asK-n1-bh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkj-M2-0DX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiscordLogo" width="245" height="240"/>
+    </resources>
+</document>

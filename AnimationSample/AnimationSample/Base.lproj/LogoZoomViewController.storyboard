@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MDh-jx-XVa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Zoom + Drag&Drop-->
+        <scene sceneID="Qq8-91-Qn8">
+            <objects>
+                <viewController title="Zoom + Drag&amp;Drop" id="MDh-jx-XVa" customClass="LogoZoomViewController" customModule="AnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lke-Cc-tBE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiscordLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dWe-EC-DVf">
+                                <rect key="frame" x="94" y="272" width="187.5" height="187.5"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dWe-EC-DVf" secondAttribute="height" multiplier="1:1" id="YK6-9f-FaK"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="G6v-LU-p0A" appends="YES" id="efe-xG-teC"/>
+                                    <outletCollection property="gestureRecognizers" destination="5EW-MA-3dD" appends="YES" id="Egf-MG-3Dd"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dWe-EC-DVf" firstAttribute="width" secondItem="Lke-Cc-tBE" secondAttribute="width" id="JAw-KS-ERz"/>
+                            <constraint firstItem="dWe-EC-DVf" firstAttribute="width" secondItem="Lke-Cc-tBE" secondAttribute="width" multiplier="0.5" id="ZbD-BF-rkK"/>
+                            <constraint firstItem="dWe-EC-DVf" firstAttribute="centerX" secondItem="Nnc-Lv-qBC" secondAttribute="centerX" id="bzf-Vk-0QK"/>
+                            <constraint firstItem="dWe-EC-DVf" firstAttribute="centerY" secondItem="Nnc-Lv-qBC" secondAttribute="centerY" id="k3u-eq-qea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nnc-Lv-qBC"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JAw-KS-ERz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="dWe-EC-DVf" id="dIM-wB-YIM"/>
+                        <outlet property="logoImageViewFullScreenWidthConstraint" destination="JAw-KS-ERz" id="MQo-0W-bVt"/>
+                        <outlet property="logoImageViewWidthConstraint" destination="ZbD-BF-rkK" id="Amo-gp-Leo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIh-EM-3KW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="G6v-LU-p0A">
+                    <connections>
+                        <action selector="didTapLogoImageView:" destination="MDh-jx-XVa" id="WDi-It-6aY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="5EW-MA-3dD">
+                    <connections>
+                        <action selector="didPanLogoImageView:" destination="MDh-jx-XVa" id="e0p-96-dHy"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1105" y="729"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiscordLogo" width="245" height="240"/>
+    </resources>
+</document>

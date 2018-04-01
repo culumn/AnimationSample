@@ -14,6 +14,8 @@
 		96A4FE7F2037FFFE001931EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A4FE7D2037FFFE001931EB /* LaunchScreen.storyboard */; };
 		96A4FE872038065F001931EB /* LogoRotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4FE862038065F001931EB /* LogoRotationViewController.swift */; };
 		96A4FE8920381F79001931EB /* LogoZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4FE8820381F79001931EB /* LogoZoomViewController.swift */; };
+		96C9E23D2071316400487391 /* LogoRotationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C9E23B2071316400487391 /* LogoRotationViewController.storyboard */; };
+		96C9E2402071319500487391 /* LogoZoomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C9E23E2071319500487391 /* LogoZoomViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		96A4FE802037FFFE001931EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A4FE862038065F001931EB /* LogoRotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoRotationViewController.swift; sourceTree = "<group>"; };
 		96A4FE8820381F79001931EB /* LogoZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoZoomViewController.swift; sourceTree = "<group>"; };
+		96C9E23C2071316400487391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationSample/Base.lproj/LogoRotationViewController.storyboard; sourceTree = "<group>"; };
+		96C9E23F2071319500487391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationSample/Base.lproj/LogoZoomViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				96A4FE862038065F001931EB /* LogoRotationViewController.swift */,
 				96A4FE8820381F79001931EB /* LogoZoomViewController.swift */,
 				96A4FE782037FFFE001931EB /* Main.storyboard */,
+				96C9E23B2071316400487391 /* LogoRotationViewController.storyboard */,
+				96C9E23E2071319500487391 /* LogoZoomViewController.storyboard */,
 				96A4FE7B2037FFFE001931EB /* Assets.xcassets */,
 				96A4FE7D2037FFFE001931EB /* LaunchScreen.storyboard */,
 				96A4FE802037FFFE001931EB /* Info.plist */,
@@ -129,8 +135,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C9E23D2071316400487391 /* LogoRotationViewController.storyboard in Resources */,
 				96A4FE7F2037FFFE001931EB /* LaunchScreen.storyboard in Resources */,
 				96A4FE7C2037FFFE001931EB /* Assets.xcassets in Resources */,
+				96C9E2402071319500487391 /* LogoZoomViewController.storyboard in Resources */,
 				96A4FE7A2037FFFE001931EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +174,22 @@
 				96A4FE7E2037FFFE001931EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		96C9E23B2071316400487391 /* LogoRotationViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C9E23C2071316400487391 /* Base */,
+			);
+			name = LogoRotationViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		96C9E23E2071319500487391 /* LogoZoomViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C9E23F2071319500487391 /* Base */,
+			);
+			name = LogoZoomViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

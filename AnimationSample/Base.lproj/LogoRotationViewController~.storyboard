@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ROL-aU-s17">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QZ6-tO-5Pa">
+                                <rect key="frame" x="16" y="325.5" width="343" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOZ-E4-vza">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <state key="normal" title="Rotation + Spring"/>
+                                        <connections>
+                                            <segue destination="6XZ-0p-iqt" kind="show" id="rom-kg-h3T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbo-Oe-Ilk">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="30"/>
+                                        <state key="normal" title="Zoom + Drag&amp;Drop"/>
+                                        <connections>
+                                            <segue destination="MDh-jx-XVa" kind="show" id="Jx4-i3-lzt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QZ6-tO-5Pa" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="A8g-u9-JKO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QZ6-tO-5Pa" secondAttribute="trailing" constant="16" id="R0i-8o-i3o"/>
+                            <constraint firstItem="QZ6-tO-5Pa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eqk-wt-2Ug"/>
+                            <constraint firstItem="QZ6-tO-5Pa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hwU-Vv-0Oc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0k4-Wx-J3R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="32.833583208395808"/>
+        </scene>
+        <!--Rotation + Spring-->
+        <scene sceneID="T8C-u4-1Xb">
+            <objects>
+                <viewController title="Rotation + Spring" id="6XZ-0p-iqt" customClass="LogoRotationViewController" customModule="AnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IOc-jl-VE1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiscordLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gkS-iR-KVL">
+                                <rect key="frame" x="94" y="272" width="187.5" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gkS-iR-KVL" secondAttribute="height" multiplier="1:1" id="C8R-Rb-i2Z"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMn-wp-LHd">
+                                <rect key="frame" x="16" y="509" width="343" height="138"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="didTapButton:forEvent:" destination="6XZ-0p-iqt" eventType="touchUpInside" id="zF7-xX-sBb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EGA-ht-vhe" firstAttribute="bottom" secondItem="xMn-wp-LHd" secondAttribute="bottom" constant="20" id="9AR-MR-7pH"/>
+                            <constraint firstItem="EGA-ht-vhe" firstAttribute="trailing" secondItem="xMn-wp-LHd" secondAttribute="trailing" constant="16" id="Ecl-Lz-vsi"/>
+                            <constraint firstItem="gkS-iR-KVL" firstAttribute="width" secondItem="IOc-jl-VE1" secondAttribute="width" multiplier="0.5" id="Jww-f4-QQa"/>
+                            <constraint firstItem="gkS-iR-KVL" firstAttribute="centerY" secondItem="EGA-ht-vhe" secondAttribute="centerY" id="KoC-fR-Cjy"/>
+                            <constraint firstItem="gkS-iR-KVL" firstAttribute="centerX" secondItem="EGA-ht-vhe" secondAttribute="centerX" id="SQi-Pr-pAg"/>
+                            <constraint firstItem="xMn-wp-LHd" firstAttribute="top" secondItem="gkS-iR-KVL" secondAttribute="bottom" constant="50" id="cpF-XL-QfN"/>
+                            <constraint firstItem="xMn-wp-LHd" firstAttribute="leading" secondItem="EGA-ht-vhe" secondAttribute="leading" constant="16" id="u54-fD-7bO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EGA-ht-vhe"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="xMn-wp-LHd" id="weV-Er-DVT"/>
+                        <outlet property="logoImageView" destination="gkS-iR-KVL" id="asK-n1-bh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkj-M2-0DX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="32.833583208395808"/>
+        </scene>
+        <!--Zoom + Drag&Drop-->
+        <scene sceneID="Qq8-91-Qn8">
+            <objects>
+                <viewController title="Zoom + Drag&amp;Drop" id="MDh-jx-XVa" customClass="LogoZoomViewController" customModule="AnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lke-Cc-tBE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiscordLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dWe-EC-DVf">
+                                <rect key="frame" x="94" y="272" width="187.5" height="187.5"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dWe-EC-DVf" secondAttribute="height" multiplier="1:1" id="YK6-9f-FaK"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="G6v-LU-p0A" appends="YES" id="efe-xG-teC"/>
+                                    <outletCollection property="gestureRecognizers" destination="5EW-MA-3dD" appends="YES" id="Egf-MG-3Dd"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dWe-EC-DVf" firstAttribute="width" secondItem="Lke-Cc-tBE" secondAttribute="width" id="JAw-KS-ERz"/>
+                            <constraint firstItem="dWe-EC-DVf" firstAttribute="width" secondItem="Lke-Cc-tBE" secondAttribute="width" multiplier="0.5" id="ZbD-BF-rkK"/>
+                            <constraint firstItem="dWe-EC-DVf" firstAttribute="centerX" secondItem="Nnc-Lv-qBC" secondAttribute="centerX" id="bzf-Vk-0QK"/>
+                            <constraint firstItem="dWe-EC-DVf" firstAttribute="centerY" secondItem="Nnc-Lv-qBC" secondAttribute="centerY" id="k3u-eq-qea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nnc-Lv-qBC"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JAw-KS-ERz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="dWe-EC-DVf" id="dIM-wB-YIM"/>
+                        <outlet property="logoImageViewFullScreenWidthConstraint" destination="JAw-KS-ERz" id="MQo-0W-bVt"/>
+                        <outlet property="logoImageViewWidthConstraint" destination="ZbD-BF-rkK" id="Amo-gp-Leo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIh-EM-3KW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="G6v-LU-p0A">
+                    <connections>
+                        <action selector="didTapLogoImageView:" destination="MDh-jx-XVa" id="WDi-It-6aY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="5EW-MA-3dD">
+                    <connections>
+                        <action selector="didPanLogoImageView:" destination="MDh-jx-XVa" id="e0p-96-dHy"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1105" y="729"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dgX-jz-Ust">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ROL-aU-s17" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r7B-BA-Ymo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="69T-22-8ek"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mu9-de-iDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiscordLogo" width="245" height="240"/>
+    </resources>
+</document>
