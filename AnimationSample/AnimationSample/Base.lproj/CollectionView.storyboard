@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection view-->
+        <!--CollectionView-->
         <scene sceneID="6VO-JP-29i">
             <objects>
-                <viewController title="Collection view" id="J6Z-fM-fhE" customClass="CollectionViewController" customModule="AnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CollectionView" id="J6Z-fM-fhE" customClass="CollectionViewController" customModule="AnimationSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ENI-i3-Me6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
