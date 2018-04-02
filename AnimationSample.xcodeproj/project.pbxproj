@@ -18,6 +18,8 @@
 		96C9E2402071319500487391 /* LogoZoomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C9E23E2071319500487391 /* LogoZoomViewController.storyboard */; };
 		96C9E244207134C200487391 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9E243207134C200487391 /* TableViewController.swift */; };
 		96C9E2472071357700487391 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C9E2452071357700487391 /* TableView.storyboard */; };
+		96C9E24920725F8F00487391 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9E24820725F8F00487391 /* CollectionViewController.swift */; };
+		96C9E24C20725FB400487391 /* CollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C9E24A20725FB400487391 /* CollectionView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		96C9E23F2071319500487391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationSample/Base.lproj/LogoZoomViewController.storyboard; sourceTree = "<group>"; };
 		96C9E243207134C200487391 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		96C9E2462071357700487391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationSample/Base.lproj/TableView.storyboard; sourceTree = "<group>"; };
+		96C9E24820725F8F00487391 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		96C9E24B20725FB400487391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AnimationSample/Base.lproj/CollectionView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +75,11 @@
 				96A4FE862038065F001931EB /* LogoRotationViewController.swift */,
 				96A4FE8820381F79001931EB /* LogoZoomViewController.swift */,
 				96C9E243207134C200487391 /* TableViewController.swift */,
+				96C9E24820725F8F00487391 /* CollectionViewController.swift */,
 				96A4FE782037FFFE001931EB /* Main.storyboard */,
 				96C9E23B2071316400487391 /* LogoRotationViewController.storyboard */,
 				96C9E23E2071319500487391 /* LogoZoomViewController.storyboard */,
+				96C9E24A20725FB400487391 /* CollectionView.storyboard */,
 				96C9E2452071357700487391 /* TableView.storyboard */,
 				96A4FE7B2037FFFE001931EB /* Assets.xcassets */,
 				96A4FE7D2037FFFE001931EB /* LaunchScreen.storyboard */,
@@ -146,6 +152,7 @@
 				96A4FE7F2037FFFE001931EB /* LaunchScreen.storyboard in Resources */,
 				96A4FE7C2037FFFE001931EB /* Assets.xcassets in Resources */,
 				96C9E2402071319500487391 /* LogoZoomViewController.storyboard in Resources */,
+				96C9E24C20725FB400487391 /* CollectionView.storyboard in Resources */,
 				96A4FE7A2037FFFE001931EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C9E24920725F8F00487391 /* CollectionViewController.swift in Sources */,
 				96A4FE8920381F79001931EB /* LogoZoomViewController.swift in Sources */,
 				96A4FE772037FFFE001931EB /* ViewController.swift in Sources */,
 				96A4FE752037FFFE001931EB /* AppDelegate.swift in Sources */,
@@ -206,6 +214,14 @@
 				96C9E2462071357700487391 /* Base */,
 			);
 			name = TableView.storyboard;
+			sourceTree = "<group>";
+		};
+		96C9E24A20725FB400487391 /* CollectionView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C9E24B20725FB400487391 /* Base */,
+			);
+			name = CollectionView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
